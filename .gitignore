@@ -1,0 +1,15 @@
+# Local material: never publish any of it.
+node_modules/
+.live-profile/
+.iso-home/
+*.log
+
+# internal development history, kept local
+HANDOFF.md
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

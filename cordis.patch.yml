@@ -1,0 +1,13 @@
+# dsh-session-tabs bundle patch.
+#
+# Mounts the pack as a loader row so the client-modules scanner sees its
+# `dsh.client` declaration and serves the browser half (the tab strip). The
+# row is a plain plugin with no configuration; every registration happens in
+# the browser against the official slot / locale / Session Controller faces,
+# so no upstream file is touched.
+#
+# The id is the row's stable handle; the user's profile cordis.patch.yml may
+# address or disable it by this id.
+- insert:
+    - id: session-tabs
+      name: dsh-session-tabs
